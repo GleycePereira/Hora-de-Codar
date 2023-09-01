@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página de Java Script, usando operadores matemáticos">
+    <meta name="keywords" content="Java Script, operadores matemáticos, codar"> 
+    <meta name="author" content="Gleyce Pereira">
+    <link rel="icon" type="image/x-icon" href="pc.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hora de Codar</title>
+
+    <style>
+        body{
+            background-image: url("imagem.png");
+            background-size: cover;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <script>
+        // alert('Olá, Clarice!')
+
+        
+        // fusca
+        var nome_do_carro = 'Fusca';
+        console.log(nome_do_carro);
+
+        // nome
+        var nome_do_usuario = prompt("Qual seu nome?");
+        var idade = prompt("Sua idade é:")
+        idade = parseInt(idade);
+        alert( "Seu nome é " + nome_do_usuario + ", você tem " + idade + " anos" );
+
+        // retangulo 
+        var base_r = prompt("Coloque um número para a base do retângulo:");
+        var altura_r = prompt("Coloque um número para a altura:");
+        base_r = parseInt(base_r);
+        altura_r = parseInt(altura_r);
+
+        document.write("Área do retângulo: " + (base_r * altura_r));
+
+        document.write("<br>");
+
+        // quadrado 
+        var lado_quadrado = prompt("Coloque um número para o quadrado:");
+        lado_quadrado = parseInt(lado_quadrado);
+
+        document.write( "Área do quadrado: " + (lado_quadrado * lado_quadrado) + "m²")
+
+        // losango 
+        var diagonal_maior = 20;
+        var diagonal_menor = 5;
+
+        var losango = (diagonal_maior * diagonal_menor) / 2;
+        console.log("Área de losango:" + losango);
+        
+        // trapézio 
+        var base_maior = 10;
+        var base_menor = 3;
+        var h = 20;
+
+        var trapezio = (base_maior + base_menor) * h / 2;
+        console.log("Área do trapézio:" + trapezio);
+
+        // parelelogramo
+        var base_p = 30;
+        var altura_p = 55;
+
+        var paralelogramo = base_p * altura_p;
+        console.log("Área do paralelogramo:" + paralelogramo);
+
+        // triangulo 
+        var base_t = 10;
+        var altura_t = 8;
+
+        var triangulo = (base_t * altura_t) / 2;
+        console.log("Área do triângulo:" + triangulo);
+
+        // circulo 
+        var pi = Math.PI;
+        var r = Math.pow (5,2);
+
+        var circulo = pi * r;
+        console.log("Área do círculo:" + circulo);
+        
+        
+    </script>
+    
+</body>
+</html>
